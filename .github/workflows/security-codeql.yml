@@ -25,4 +25,4 @@ jobs:
       - name: Initialize CodeQL
         uses: github/codeql-action/init@86f3159a697a097a813ad9bfa0002412d97690a4 # tag=v2.1.25
       - name: Perform CodeQL Analysis
-        uses: github/codeql-action/analyze@4c8f13758e748234abaa6a831d6f53981844a524 # # tag=v2.1.21
+        uses: github/codeql-action/analyze@314ede696bb2e74e9d0a34d282cdaa9220b70754 # # tag=v2.1.21
