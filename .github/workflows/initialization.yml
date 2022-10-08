@@ -43,6 +43,8 @@ jobs:
           value: ${{ github.repository_owner }}
       - name: Setup Python
         uses: actions/setup-python@b55428b1882923874294fa556849718a1d7f2ca5 # tag=v4.2.0
+        with:
+          python-version: 3.x
       - name: Install cookiecutter
         run: pip install cookiecutter
       - name: Hack cookiecutter to work with GH Actions
