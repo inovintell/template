@@ -5,6 +5,7 @@ on:
 
 permissions:
   contents: write
+  issues: write
 
 jobs:
   setup:
