@@ -15,11 +15,12 @@ jobs:
       - name: Harden Runner
         uses: step-security/harden-runner@dd2c410b088af7c0dc8046f3ac9a8f4148492a95 # tag=v1.4.5
         with:
-          egress-policy: audit
-          # allowed-endpoints: >
-          #   files.pythonhosted.org:443
-          #   github.com:443
-          #   pypi.org:443
+          egress-policy: block
+          allowed-endpoints: >
+            api.github.com:443
+            files.pythonhosted.org:443
+            github.com:443
+            pypi.org:443
       - name: Checkout repository
         uses: actions/checkout@2541b1294d2704b0964813337f33b291d3f8596b # tag=v3.0.2
         with:
@@ -42,6 +43,8 @@ jobs:
           value: ${{ github.repository_owner }}
       - name: Setup Python
         uses: actions/setup-python@b55428b1882923874294fa556849718a1d7f2ca5 # tag=v4.2.0
+        with:
+          python-version: 3.x
       - name: Install cookiecutter
         run: pip install cookiecutter
       - name: Hack cookiecutter to work with GH Actions
