@@ -22,12 +22,12 @@ jobs:
     if: github.actor != 'renovate[bot]'
     steps:
       - name: Harden Runner
-        uses: step-security/harden-runner@2e205a28d0e1da00c5f53b161f4067b052c61f34 # tag=v1.5.0
+        uses: step-security/harden-runner@dd2c410b088af7c0dc8046f3ac9a8f4148492a95 # tag=v1.4.5
         with:
           egress-policy: block
           allowed-endpoints: >
             api.github.com:443
-      - uses: amannn/action-semantic-pull-request@505e44b4f33b4c801f063838b3f053990ee46ea7 # tag=v4.6.0
+      - uses: amannn/action-semantic-pull-request@91682d013dea3ff257520b9b68c9cb93ced4fe9b # tag=v4.5.0
         with:
           validateSingleCommit: true
           wip: true
