@@ -27,7 +27,7 @@ jobs:
           egress-policy: block
           allowed-endpoints: >
             api.github.com:443
-      - uses: amannn/action-semantic-pull-request@91682d013dea3ff257520b9b68c9cb93ced4fe9b # tag=v4.5.0
+      - uses: amannn/action-semantic-pull-request@5369185dc9812f174fa58b03b13b79920b68f8e1 # tag=v5.0.0
         with:
           validateSingleCommit: true
           wip: true
