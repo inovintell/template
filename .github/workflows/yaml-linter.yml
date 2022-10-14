@@ -29,4 +29,4 @@ jobs:
         with:
           fetch-depth: 0
       - name: Run yamllint
-        uses: ibiqlik/action-yamllint@81e214fd484713882ce4237cb7cd264d550856cf # tag=v3.1.0
+        uses: ibiqlik/action-yamllint@2576378a8e339169678f9939646ee3ee325e845c # tag=v3.1.1
