@@ -29,4 +29,4 @@ jobs:
         with:
           fetch-depth: 0
       - name: Lint commits
-        uses: wagoid/commitlint-github-action@4caf21aed4a778f940d0b17eb109942ef167bb27 # tag=v5.0.2
+        uses: wagoid/commitlint-github-action@861b4d9f1085e4038d715c541f02b43784676631 # tag=v5.2.2
