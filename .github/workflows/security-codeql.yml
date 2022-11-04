@@ -23,6 +23,6 @@ jobs:
         with:
           egress-policy: audit # TODO: change to 'egress-policy: block' after couple of runs
       - name: Initialize CodeQL
-        uses: github/codeql-action/init@18fe527fa8b29f134bb91f32f1a5dc5abb15ed7f # tag=v2.1.30
+        uses: github/codeql-action/init@c3b6fce4ee2ca25bc1066aa3bf73962fda0e8898 # tag=v2.1.31
       - name: Perform CodeQL Analysis
         uses: github/codeql-action/analyze@a8cabafa5665779b124056fa190a1f27335eb8a1 # # tag=v2.1.21
